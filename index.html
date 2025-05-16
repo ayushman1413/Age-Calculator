@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age Calculator</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Age Calculator</h1>
+            <p>Calculate your exact age in years, months, and days</p>
+        </div>
+        
+        <div class="form-container">
+            <div class="input-group">
+                <label for="birthdate">Your Birth Date</label>
+                <input type="date" id="birthdate" required>
+                <div class="error" id="date-error">Please enter a valid date that is not in the future</div>
+            </div>
+            
+            <button class="calculate-btn" id="calculate">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <polyline points="12 6 12 12 16 14"></polyline>
+                </svg>
+                Calculate Age
+            </button>
+            
+            <div class="result" id="result">
+                <h2>Your Age is</h2>
+                <div class="age-details">
+                    <div class="age-box">
+                        <div class="age-number" id="years">0</div>
+                        <div class="age-label">Years</div>
+                    </div>
+                    <div class="age-box">
+                        <div class="age-number" id="months">0</div>
+                        <div class="age-label">Months</div>
+                    </div>
+                    <div class="age-box">
+                        <div class="age-number" id="days">0</div>
+                        <div class="age-label">Days</div>
+                    </div>
+                </div>
+                
+                <div class="progress-container">
+                    <div class="progress-label">
+                        <span>Progress in current year</span>
+                        <span id="progress-percentage">0%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" id="progress-fill"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
